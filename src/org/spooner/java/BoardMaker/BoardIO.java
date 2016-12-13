@@ -28,6 +28,7 @@ public class BoardIO {
 	}
 	public static BufferedImage loadImage(File path){
 		try {
+			System.out.println(path.toString());
 			return ImageIO.read(path);
 		}catch(Exception e){
 			BoardExceptionHandler.handle(2, e);
